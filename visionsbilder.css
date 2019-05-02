@@ -256,13 +256,13 @@ cursor: pointer;
 .bcomment{
   height: 14%;
 top:0%;
-left:35%;
+left:31%;
 cursor: pointer;
 }
 .indexgubbecomment{
   height: 10%;
 top:10%;
-left:34%;
+left:30%;
 }
 
 
@@ -309,9 +309,9 @@ left:3%;
 a{color: black;}
 .ul{
   font-family: courier_newregular;
-  font-size: 1.5rem;
+  font-size: 1rem;
   color: black;
-bottom: 48vh;
+top: 25vh;
  float: right;
   text-align: left;
   margin-left: 2%;
