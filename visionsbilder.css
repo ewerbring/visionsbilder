@@ -16,7 +16,7 @@
 }
 
 body{
-  overflow: hidden;
+  overflow: scroll;
 }
 
 #cosmos{
@@ -346,4 +346,8 @@ left: 67px;
   left: 50px;
   width: 30vw;
   line-height: 40px;
+}
+
+.AnswerBox {
+  border:20px solid black;
 }
