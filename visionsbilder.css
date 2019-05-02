@@ -213,6 +213,21 @@ left:68%;
 display: none;cursor: pointer;
 }
 
+.b5{
+  height: 15%;
+top:3%;
+left:82%;
+cursor: pointer;
+}
+.b6{
+  height: 15%;
+top:3%;
+left:6%;
+cursor: pointer;
+}
+
+
+
 #gubbe10{
   display: none;
 }
