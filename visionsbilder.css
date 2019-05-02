@@ -16,7 +16,7 @@
 }
 
 body{
-  overflow: scroll;
+  overflow: hidden;
 }
 
 #cosmos{
@@ -92,16 +92,7 @@ cursor: move;
   display: none;
 }
 
-.add_field_button{
-  z-index: 10;
-  position: absolute;
-  top: 350px;
-  left: 50px;
-  width: 90px;
-  height: 30px;
-  background-color: blue;
-  color: white;
-}
+
 .topmenu{
   font-family: courier_newbold;
   color: black;
@@ -113,7 +104,22 @@ cursor: move;
 
 }
 
+.AnswerBox{
+  width: auto;
+  height: auto;
+  position: absolute;
+  top: 10vh;
+  left: 45vw;
+  z-index: 250;
 
+  background-color: white;
+  border:5px solid black;
+
+}
+
+.texfield{
+  border: none;
+}
 
 .gubbox{
   bottom: 2vh;
@@ -125,7 +131,7 @@ cursor: move;
   z-index: 50;
   background-color: rgba(0, 0, 255, 0.5);
   pointer-events: none;
-  box-shadow: 3px 3px 20px red;
+  box-shadow: 3px 3px 20px rgba(255,0,0,.3);
 }
 
 .gubbe{
@@ -177,15 +183,25 @@ top:55%;
 left:65%;
 }
 
-.indexgubbe1{
+.indexgubbe{
   height: 15%;
 top:15%;
 left:2%;
+}
+.indexgubbe1{
+  height: 10%;
+top:10%;
+left:5%;
 }
 .indexgubbe2{
   height: 15%;
 top:15%;
 left:92%;
+}
+.indexgubbe3{
+  height: 15%;
+top:25%;
+left:2%;
 }
 
 .b1{
@@ -225,6 +241,42 @@ top:3%;
 left:6%;
 cursor: pointer;
 }
+.b7{
+  height: 15%;
+top:23%;
+left:6%;
+cursor: pointer;
+}
+.bback{
+  height: 8%;
+top:3%;
+left:1%;
+cursor: pointer;
+}
+.bcomment{
+  height: 14%;
+top:0%;
+left:35%;
+cursor: pointer;
+}
+.indexgubbecomment{
+  height: 10%;
+top:10%;
+left:34%;
+}
+
+
+.bpeople{
+  height: 18%;
+top:48%;
+left:5%;
+cursor: pointer;
+}
+.indexgubbepeople{
+  height: 16%;
+top:58%;
+left:3%;
+}
 
 
 
@@ -254,6 +306,18 @@ cursor: pointer;
   margin-right: 12%;
 
 }
+a{color: black;}
+.ul{
+  font-family: courier_newregular;
+  font-size: 1.5rem;
+  color: black;
+bottom: 48vh;
+ float: right;
+  text-align: left;
+  margin-left: 2%;
+  position: absolute;
+
+}
 .abouttext{
   font-family: courier_newregular;
   font-size: .9rem;
@@ -276,6 +340,8 @@ cursor: pointer;
   z-index: 50;
   height: 69vh;
   pointer-events: none;
+  box-shadow: 3px 3px 20px rgba(255,0,0,.3);
+
 }
 
 
@@ -311,31 +377,6 @@ cursor: pointer;
   text-decoration: underline;
 }
 
-.bubble
-{
-position: relative;
-width: 350px;
-height: 120px;
-padding: 0px;
-background: #FFFFFF;
--webkit-border-radius: 65px;
--moz-border-radius: 65px;
-border-radius: 65px;
-}
-
-.bubble:after
-{
-content: '';
-position: absolute;
-border-style: solid;
-border-width: 15px 15px 0;
-border-color: #FFFFFF transparent;
-display: block;
-width: 0;
-z-index: 1;
-bottom: -15px;
-left: 67px;
-}
 
 .header{
   z-index: 50;
@@ -346,8 +387,4 @@ left: 67px;
   left: 50px;
   width: 30vw;
   line-height: 40px;
-}
-
-.AnswerBox {
-  border:20px solid black;
 }

@@ -10,11 +10,6 @@ $( function() {
 
 
 
-$('.gubbe').click(function() {
-
-   $('.input_fields_wrap').show();
-
-});
 
 $('.bgubbe').click(function() {
 
@@ -51,7 +46,7 @@ $(document).ready(function() {
 
 		console.log('adding!');
 		e.preventDefault();
-		$(wrapper).append('<div class="AnswerBox"><textarea>LOLOLOL</textarea></div>'); //add input box
+		$(wrapper).append('<div class="AnswerBox speech-bubble"><textarea class="texfield">Type a comment and drag it around</textarea></div>'); //add input box
 
 		$( function() {
    			$( ".AnswerBox" ).draggable();
