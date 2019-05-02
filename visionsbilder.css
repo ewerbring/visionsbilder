@@ -135,7 +135,7 @@ cursor: move;
 }
 
 .gubbe{
-  height: 70%;
+  height: 67%;
 
   top:10%;
 display: inline-block;
@@ -256,13 +256,13 @@ cursor: pointer;
 .bcomment{
   height: 14%;
 top:0%;
-left:31%;
+left:27%;
 cursor: pointer;
 }
 .indexgubbecomment{
   height: 10%;
 top:10%;
-left:30%;
+left:26%;
 }
 
 
