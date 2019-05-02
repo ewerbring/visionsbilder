@@ -1,7 +1,7 @@
 
 
 $( function() {
-   $( "#responcebox, .gubbe, .input_fields_wrap" ).draggable();
+   $( ".AnswerBox, #responcebox, .gubbe, .input_fields_wrap" ).draggable();
  } );
 
  $( function() {
@@ -44,21 +44,23 @@ $('.egubbe').click(function() {
 
 $(document).ready(function() {
 	var max_fields      = 10; //maximum input boxes allowed
-	var wrapper   		= $(".input_fields_wrap"); //Fields wrapper
-	var add_button      = $(".add_field_button"); //Add button ID
+	var wrapper   		= $("#answerBoxContainer"); //Fields wrapper
+	var add_button      = $("#ADDBUTTON"); //Add button ID
 
-	var x = 1; //initlal text box count
 	$(add_button).click(function(e){ //on add input button click
+
+		console.log('adding!');
 		e.preventDefault();
-		if(x < max_fields){ //max input box allowed
-			x++; //text box increment
-			$(wrapper).append('<div><input class="comment" id="input" type="text" name="mytext[]"/><a href="#" class="remove_field"></a></div>'); //add input box
-		}
+		$(wrapper).append('<div class="AnswerBox"><textarea>LOLOLOL</textarea></div>'); //add input box
+
+		$( function() {
+   			$( ".AnswerBox" ).draggable();
+		} );
 	});
 
-	$(wrapper).on("click",".remove_field", function(e){ //user click on remove text
-		e.preventDefault(); $(this).parent('div').remove(); x--;
-	})
+	// $(wrapper).on("click",".remove_field", function(e){ //user click on remove text
+	// 	e.preventDefault(); $(this).parent('div').remove(); x--;
+	// })
 });
 
 
