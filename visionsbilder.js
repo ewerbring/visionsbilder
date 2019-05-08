@@ -14,6 +14,7 @@ $( function() {
 $('.bgubbe').click(function() {
 
    $('.b3').show();
+   console.log(clicked);
 });
 $('.cgubbe').click(function() {
 
