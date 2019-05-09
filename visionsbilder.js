@@ -1,5 +1,7 @@
 
 
+$(document).ready(function() {
+
 $( function() {
    $( ".AnswerBox, #responcebox, .gubbe, .input_fields_wrap" ).draggable();
  } );
@@ -38,7 +40,7 @@ $('.egubbe').click(function() {
 });
 ///textbox
 
-$(document).ready(function() {
+
 	var max_fields      = 10; //maximum input boxes allowed
 	var wrapper   		= $("#answerBoxContainer"); //Fields wrapper
 	var add_button      = $("#ADDBUTTON"); //Add button ID
